@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimoniales{
+    max-width: 85%;
+    margin: 0 auto;
+
+    &__contenedor{
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+    }
+    
+
+    &__heading{
+        margin-top: 7.5rem;
+        @include m.desktop {
+            margin-top: 11rem;
+        }
+        color: v.$gris3;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: v.$fuente_secundaria;
+        font-weight: 900;
+        font-size: 1.6rem;
+        letter-spacing: .5rem;
+    }
+}

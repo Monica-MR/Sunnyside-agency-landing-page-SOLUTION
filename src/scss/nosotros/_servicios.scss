@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.servicio{
+    height: 58rem;
+    @include m.desktop {
+        height: 60rem; 
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    
+    &:nth-child(5){
+        background-image: url(../img/mobile/image-graphic-design.jpg);
+        @include m.tablet {
+            background-image: url(../img/desktop/image-graphic-design.jpg);
+        }
+    }
+    
+    &:nth-child(6){
+        background-image: url(../img/mobile/image-photography.jpg);
+        @include m.tablet {
+            background-image: url(../img/desktop/image-photography.jpg);
+        }
+    } 
+
+    &__heading, &__description{
+        max-width: 85%;
+        margin: 0 auto;
+        color: v.$verde;
+        @include m.desktop {
+            max-width: 60%;
+        }
+    }
+    &__heading{
+        padding-top: 40rem;
+        font-weight: 900;
+        &--blue{
+            color: v.$azul;
+        }
+    }
+    &__description{
+        margin-top: 2rem;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        &--blue{
+            color: v.$azul;
+        }
+        @include m.desktop {
+            font-size: 2rem;
+        }
+    }
+} 

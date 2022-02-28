@@ -1,0 +1,92 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navegacion{
+    
+    &__mobile-menu{
+        cursor: pointer;
+    }
+
+    @include m.tablet {
+        &__mobile-menu{
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            margin-top: 0;
+        }
+    }
+
+    &__enlaces{
+        background-color: v.$blanco;
+        position: absolute;
+        width: 87%;
+        left: 6.5%;
+        margin-top: 4rem;
+        height: 32rem;
+
+        &::before{
+            content: '';
+            height: 0;
+            width: 0;
+            position: absolute;
+            right: 0;
+            margin-top: -2rem;
+            border-left: 2rem solid transparent;
+            border-top: 2rem solid transparent;
+            border-right: 2rem solid v.$blanco;
+            border-bottom: 2rem solid v.$blanco;
+        }
+    }
+
+    @include m.tablet {
+        &__enlaces{
+            margin-top: 1.5rem;
+            position: unset;
+            visibility: visible;
+            background-color: unset;
+            opacity: 1;
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 5rem ;
+
+            &::before{
+                all: unset;
+            }
+        }
+    }
+
+    &__elemento{
+        padding-top: 4rem;
+        &:last-of-type{
+            padding-top: 6rem;
+        }
+    }
+
+    @include m.tablet {
+        &__elemento{
+            padding-top: 0;
+            &:last-of-type{
+                padding-top: 0rem;
+            }
+        }
+    }
+
+    &__link{
+        color: v.$gris2;
+        &--boton{
+            @include m.boton( v.$amarillo, v.$primario, v.$azulTransparente, v.$blanco);
+            padding: 1.5rem 2.5rem;
+        }
+    }
+    
+    @include m.tablet {
+        &__link{ 
+            color: v.$blanco;
+            &--boton{
+                @include m.boton( v.$blanco, v.$primario, v.$azulTransparente, v.$blanco);
+            }
+        }
+    }
+} 

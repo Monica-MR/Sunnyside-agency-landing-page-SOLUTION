@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    background-color: lighten(v.$cyan, 28%); 
+    padding-bottom: 8rem;
+
+    &__logo{
+        filter: brightness(82%);
+        margin: 0 auto;
+        padding-top: 6rem;
+        width: 17rem;
+    }
+    &__navegacion{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5rem;
+        @include m.tablet {
+            max-width: 50%;
+            margin: 5rem auto 0 auto;
+        }
+        @include m.desktop {
+            max-width: 28%;
+        }
+    }
+    &__link{
+        color: v.$cyan;
+    }
+    &__social{
+        max-width: 50%;
+        margin: 8rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @include m.tablet {
+            max-width: 20%;
+        }
+        @include m.desktop {
+            max-width: 13%;
+        }
+    }
+}

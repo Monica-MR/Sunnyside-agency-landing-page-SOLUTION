@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__barra">
+      <img src="build/img/logo.svg" alt="Logo Sunnyside" class="header__logo">
+      <nav class="navegacion">
+        <img class="navegacion__mobile-menu" src="build/img/icon-hamburger.svg" alt="Icono de hamburguesa" id="menu">
+        <ul class="navegacion__enlaces hidden" id="nav-header">
+          <li class="navegacion__elemento"><a href="#" class="navegacion__link">About</a></li>
+          <li class="navegacion__elemento"><a href="#" class="navegacion__link">Services</a></li>
+          <li class="navegacion__elemento"><a href="#" class="navegacion__link">Projects</a></li>
+          <li class="navegacion__elemento"><a href="#" class="navegacion__link navegacion__link--boton">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="header__heading">We are creatives</h1>
+  </header>
+  <main class="main">
+    <div class="us">
+      <div class="us__image us__image--yellow"></div>
+      <div class="us__info us__info--primero">
+        <h2 class="us__heading">Transform your brand</h2>
+        <p class="us__description">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#" class="us__link us__link--yellow ">Learn more</a>
+      </div>
+
+      <div class="us__image us__image--red"></div>
+      <div class="us__info">
+        <h2 class="us__heading">Stand out to the right audience</h2>
+        <p class="us__description">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a href="#" class="us__link us__link--red ">Learn more</a>
+      </div>
+       
+      <div class="servicio">
+        <h3 class="servicio__heading">Graphic design</h3>
+        <p class="servicio__description">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+      <div class="servicio">
+        <h3 class="servicio__heading servicio__heading--blue">Photography</h3>
+        <p class="servicio__description servicio__description--blue">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+  </main>
+  <section class="testimoniales">
+    <h3 class="testimoniales__heading">Client testimonials</h3>
+    <div class="testimoniales__contenedor">
+      <div class="testimonial">
+        <picture>
+          <source srcset ="build/img/image-emily.avif" type="image/avif">
+          <source srcset ="build/img/image-emily.webp" type="image/webp">
+          <img class="testimonial__photo" loading="lazy" src="build/img/image-emily.jpg" width="500" height="300" alt="Foto testimonial">
+        </picture>
+        <p class="testimonial__info">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <div class="testimonial__author">
+          <p class="testimonial__name">Emily R.</p>
+          <p class="testimonial__occupation">Marketing Director</p>
+        </div>
+      </div><!--.testimonial-->
+      <div class="testimonial">
+        <picture>
+          <source srcset ="build/img/image-thomas.avif" type="image/avif">
+          <source srcset ="build/img/image-thomas.webp" type="image/webp">
+          <img class="testimonial__photo" loading="lazy" src="build/img/image-thomas.jpg" width="500" height="300" alt="Foto testimonial">
+        </picture>
+        <p class="testimonial__info">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <div class="testimonial__author">
+          <p class="testimonial__name">Thomas S.</p>
+          <p class="testimonial__occupation">Chief Operating Officer</p>
+        </div>
+      </div><!--.testimonial-->
+      <div class="testimonial">
+        <picture>
+          <source srcset ="build/img/image-jennie.avif" type="image/avif">
+          <source srcset ="build/img/image-jennie.webp" type="image/webp">
+          <img class="testimonial__photo" loading="lazy" src="build/img/image-jennie.jpg" width="500" height="300" alt="Foto testimonial">
+        </picture>
+        <p class="testimonial__info">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <div class="testimonial__author">
+          <p class="testimonial__name">Jennie F.</p>
+          <p class="testimonial__occupation">Business Owner</p>
+        </div>
+      </div><!--.testimonial-->
+    </div>
+  </section>
+  <div class="imagenes">
+    <div class="imagenes__imagen"></div>
+    <div class="imagenes__imagen"></div>
+    <div class="imagenes__imagen"></div>
+    <div class="imagenes__imagen"></div>
+  </div>
+  <footer class="footer">
+    <img class="footer__logo" src="build/img/logocyan.svg" alt="Logo sunnyside">
+    <nav class="footer__navegacion">
+      <a class="footer__link" href="#">About</a>
+      <a class="footer__link" href="#">Services</a>
+      <a class="footer__link" href="#">Projects</a>
+    </nav>
+    <div class="footer__social">
+      <img class="footer__icon" src="build/img/icon-facebook.svg" alt="Logo facebook">
+      <img class="footer__icon" src="build/img/icon-instagram.svg" alt="Logo instagram">
+      <img class="footer__icon" src="build/img/icon-twitter.svg" alt="Logo twitter">
+      <img class="footer__icon" src="build/img/icon-pinterest.svg" alt="Logo pinterest">
+    </div>
+  </footer> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Monica Muñoz Ramirez</a>.
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

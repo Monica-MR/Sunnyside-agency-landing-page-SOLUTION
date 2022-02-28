@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.imagenes{
+    @include m.grid(2,0);
+    @include m.tablet {
+        @include m.grid(4,0);
+    }
+    &__imagen{
+        height: 18rem;
+        @include m.tablet {
+            height: 36rem;
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        &:nth-child(1){
+            background-image: url(../img/mobile/image-gallery-milkbottles.jpg);
+            @include m.tablet {
+                background-image: url(../img/desktop/image-gallery-milkbottles.jpg);
+            }
+        }
+        &:nth-child(2){
+            background-image: url(../img/mobile/image-gallery-orange.jpg);
+            @include m.tablet {
+                background-image: url(../img/desktop/image-gallery-orange.jpg);
+            }
+        }
+        &:nth-child(3){
+            background-image: url(../img/mobile/image-gallery-cone.jpg);
+            @include m.tablet {
+                background-image: url(../img/desktop/image-gallery-cone.jpg);
+            }
+        }
+        &:nth-child(4){
+            background-image: url(../img/mobile/image-gallery-sugar-cubes.jpg);
+            @include m.tablet {
+                background-image: url(../img/desktop/image-gallery-sugarcubes.jpg);
+            }
+        }
+    }
+}
