@@ -452,7 +452,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1rem;
   margin-top: 12rem;
-  margin-bottom: 28rem;
+  margin-bottom: 27rem;
   font-weight: 900;
 }
 @media (min-width: 768px) {
@@ -631,6 +631,7 @@ h3 {
 @media (min-width: 768px) {
   .us__heading {
     text-align: left;
+    font-size: 4.5rem;
   }
 }
 .us__description {
@@ -751,7 +752,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .testimonial {
-    margin-bottom: 11rem;
+    margin-bottom: 16rem;
   }
 }
 .testimonial__photo {
@@ -798,12 +799,12 @@ h3 {
   text-align: center;
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 0.5rem;
 }
 @media (min-width: 1024px) {
   .testimoniales__heading {
-    margin-top: 11rem;
+    margin-top: 14rem;
   }
 }
 
@@ -828,6 +829,11 @@ h3 {
 @media (min-width: 768px) {
   .imagenes__imagen {
     height: 36rem;
+  }
+}
+@media (min-width: 1024px) {
+  .imagenes__imagen {
+    height: 42rem;
   }
 }
 .imagenes__imagen:nth-child(1) {
